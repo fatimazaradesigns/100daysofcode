@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Animated Website Home Page</title>
+<!-- Apply styles to html elements with CSS -->
+<style>
+*{
+margin:0; padding:0; boxsizing: border-box;
+}
+header{
+width:100%; height:100vh;
+background-color:white;
+background-repeat: no-repeat;
+background-size: cover;
+}
+nav{
+width:100%; height: 15vh;
+background: black;
+display: flex; justify-content: space-between;
+align-items: center;
+}
+nav .mainmenu{
+width:40%;
+display: flex; justify-content: space-around;
+}
+main{
+width: 100%; height:85vh;
+display: flex; justify-content: center;
+align-items: center;
+text-align: center;
+}
+section h3{
+letter-spacing: 3px; font-weight: 200;
+}
+section h1{
+  text-transform: uppercase;
+}
+section div{
+animation:changeborder 10s infinite linear;
+border: 7px solid #e6ccff;
+}
+@keyframes changeborder{
+0%
+20%
+40%
+}
+</style>
+</head>
+<body>
+<!-- Creating a simple menu using navigation tags -->
+<!-- Using a header to indicate the menu will be part of the header -->
+<header>
+<nav>
+<div class="logo" <h3 style="color: #e6ccff;">Fatima Zara Designs</h3></div>
+<!-- Defining menu items -->
+<div class="mainmenu">
+<a href="https://hackr.io/tutorials/learn-html-5">Home</a>
+<a href="https://hackr.io/tutorials/learn-html-5">About Us</a>
+<a href="https://hackr.io/tutorials/learn-html-5">Contact</a>
+</div>
+</nav>
+<!-- Main section -->
+<main>
+<section>
+<div class="change_text"><b>WELCOME TO MY 100 DAYS OF CODE CHALLENGE</b></div>
+<!-- Italicized text -->
+<p><i>Day 3 of 100</i></p><br>
+<!-- Create a button, if theres a form, an action can be specified on click -->
+<input type=button value="view more">
+</section>
+</main>
+</header>
+</body>
+</html>
